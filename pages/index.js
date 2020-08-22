@@ -1,10 +1,11 @@
-import React, { useState } from "react";
-import Articles from "../components/Articles";
+import './index.css';
 
-const fetcher = (url) => fetch(url).then((res) => res.json());
+import React, { useState } from 'react';
+
+import Articles from '../components/Articles';
 
 const Index = () => {
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState('');
   const [articles, setArticles] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -22,13 +23,13 @@ const Index = () => {
     e.preventDefault();
 
     fetchData(search);
-    setSearch("");
+    setSearch('');
   };
 
   return (
     <div className="App">
       <h2 className="title">
-        {" "}
+        {' '}
         <strong>Newsorama</strong>
       </h2>
       <form onSubmit={handleSubmit}>

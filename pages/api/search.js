@@ -1,12 +1,12 @@
-const qs = require("query-string");
+const qs = require('query-string');
 
 export default (req, res) => {
-  if (req.method === "GET") {
+  if (req.method === 'GET') {
     const url = new URL(req.url, `https://${req.headers.host}`);
     const { q } = qs.parse(url.search);
     if (!q) {
       res.statusCode = 400;
-      res.end(JSON.stringify({ error: "No Query Received" }));
+      res.end(JSON.stringify({ error: 'No Query Received' }));
     }
 
     fetch(
