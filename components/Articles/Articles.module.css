@@ -1,0 +1,9 @@
+.Articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.spinner {
+  margin: 0 auto;
+}
