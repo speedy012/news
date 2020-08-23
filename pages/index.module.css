@@ -1,0 +1,72 @@
+.App {
+  font-weight: 900;
+  font-family: merriweather, serif;
+}
+
+.title {
+  font-family: merriweather, serif;
+  font-weight: 800;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form input {
+  padding: 0.35rem 0.25rem;
+}
+
+.articles-body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.article-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 31%;
+  margin: 1%;
+  background-color: white;
+  padding: 0;
+  border: none;
+  border-radius: 6px;
+}
+
+.article-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.App input {
+  display: block;
+  width: 50%;
+  font-family: merriweather;
+  font-size: 1em;
+  margin: 0 auto;
+}
+
+.App button {
+  min-width: 100px;
+  padding: 0.54rem 0.75rem;
+  background-color: #2954af;
+  color: white;
+  border-radius: 4px;
+  margin: 0.5rem;
+  border: 1px solid #1843af;
+}
+
+.App button[type='reset'] {
+  background-color: #ee4444;
+  border-color: #ee3333;
+  color: black;
+  width: auto;
+  min-width: unset;
+}
